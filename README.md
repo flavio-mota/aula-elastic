@@ -220,7 +220,6 @@ GET news_headlines/_search
   }
 }
 ```
-Expected response from Elasticsearch:
 
 O operador "AND" resultará em correspondências mais precisas, aumentando assim a precisão. No entanto, reduzirá o número de ocorrências retornadas, resultando em menor recall. 
 
@@ -583,8 +582,6 @@ GET news_headlines/_search
   }
 }
 ```
-Expected reponse from Elasticsearch:
-
 Ao minimizar o campo hits, você verá um relatório de agregações chamado category_mentions. Este relatório exibe uma matriz de todas as categorias que existem nos dados consultados e o número de manchetes que foram escritas sobre cada categoria.
 
 Vemos que muitas manchetes de notícias sobre Michelle Obama foram escritas em categorias como "POLÍTICA", "VOZES NEGRAS", "CRIAÇÃO DE FILHOS", "GOSTO" e até mesmo "CASAMENTOS"!
@@ -767,7 +764,6 @@ GET news_headlines/_search
   }
 }
 ```
-Expected response: 
 
 Ainda devemos obter o mesmo número de ocorrências, pois a cláusula `should` não adiciona ou exclui mais ocorrências. No entanto, você notará que a classificação dos documentos foi alterada. Os documentos com a frase "BLACK VOICES" na categoria de campo agora são apresentados no topo dos resultados da pesquisa.
 
